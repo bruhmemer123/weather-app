@@ -12,7 +12,7 @@ navigator.geolocation.getCurrentPosition(async pos=>{
   }
   
   
-},()=>{console.log("failure")})
+},error=>{console.log(error)})
 
 
 //data.coord,data.main.temp,data.name,data.sys.country,data.weather.0.main,data.weather.0.description,data.wind  
