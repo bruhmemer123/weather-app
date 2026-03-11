@@ -1,10 +1,19 @@
 <html>
     <head>
         <title>Weather</title>
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
+        <div class="hide" id="error_message">Unable to get location,using mumbai as default!</div>
         <div class="data">
-            <div class="Temperature"></div>
+            <div class="today">
+                <div class="temperature"></div>
+                <div class="weather"></div>
+            </div>        
+            <div class="forecast"></div>
+        </div>
+        <div id="spinner" class="hide">
+            <img src="spinner.gif">
         </div>
         <script src="script.js"></script>
     </body>
